@@ -1,0 +1,18 @@
+.topnav {
+  display: flex;
+}
+
+.topnav h1 {
+  flex: 1;
+}
+
+.topnav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.topnav li {
+  padding: 0 2em;
+}
