@@ -2,6 +2,10 @@
   "name": "chrisgerald.github.io",
   "private": true,
   "version": "0.0.0",
+  "author": {
+    "email": "christadena2002@gmail.com",
+    "name": "Chris Gerald Tadena"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
