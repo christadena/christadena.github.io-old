@@ -1,22 +1,25 @@
 import "./Topnav.css";
-
-type TopnavProps = {
-  name: string;
-};
-
-const Topnav = (props: TopnavProps) => {
-  const name = props.name;
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+function Topnav() {
   return (
-    <div className="topnav">
-      <h1>
-        {name}
-      </h1>
-      <ul>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Projects</li>
-      </ul>
-    </div>
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">CHRIS</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features" >About</Nav.Link>
+            <Nav.Link href="#pricing" >Contact</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+     
+    </>
   );
-};
+}
+
+
 export default Topnav;
